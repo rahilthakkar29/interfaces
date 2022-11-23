@@ -11,10 +11,10 @@ just one implementation, like in calculateTax method we change 0.3 => 0.4
  */
 
 public class TaxReport {
-    private TaxCalculator2022 calculator;
+    private TaxCalculator calculator;
 
-    public TaxReport(){
-        calculator = new TaxCalculator2022(100_000);
+    public TaxReport(TaxCalculator2022 calculator){
+        this.calculator = calculator;
     }
 
     public void show(){
