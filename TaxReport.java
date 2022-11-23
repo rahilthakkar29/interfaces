@@ -13,16 +13,16 @@ just one implementation, like in calculateTax method we change 0.3 => 0.4
 public class TaxReport {
     private TaxCalculator calculator;
 
-    public TaxReport(TaxCalculator calculator){
-        this.calculator = calculator;
-    }
+//    public TaxReport(TaxCalculator calculator){
+//        this.calculator = calculator;
+//    }
 
-    public void show(){
+    public void show(TaxCalculator calculator){
         double tax = calculator.calculateTax();
         System.out.println(tax);
     }
 
-    public void setCalculator(TaxCalculator calculator){
-        this.calculator = calculator;
-    }
+//    public void setCalculator(TaxCalculator calculator){
+//        this.calculator = calculator;
+//    }
 }
